@@ -1,0 +1,149 @@
+/* Estilo do site Museu de Zoologia Virtual
+*/
+* {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Montserrat";
+}
+/*///////////// Cabeçalho */
+
+.parent{
+	/*background: blue;*/
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	/*flex-direction: column-reverse;*/
+}
+
+.parent-1{
+	/*background: blue;*/
+	display: flex;
+	width: 100%;
+	/*flex-direction: column-reverse;*/
+}
+
+.childparent{
+	/*background: green;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.childparent-1{
+	/*background: green;*/
+	display: flex;
+	flex-direction: column;
+	
+}
+
+/* card */
+
+.card {
+	/*background: rgb(255, 150, 0);*/
+	width: 80%;
+	margin: 10px;
+}
+
+
+
+/*imagem */
+
+
+.child-img{
+	/*background: rgb(1,150,255);*/
+	width: 80%;
+	justify-content: center;
+}
+
+.child-img img{
+	width: 100%;
+	height: 100%;
+}
+
+.container-img {
+	position: relative;
+	max-width: 100px;
+	margin: 0 auto;
+}
+
+.container-img img{vertical-align: middle;}
+
+.container-img .content-img {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0,0,0,0);
+	color: #000;
+	width: 100%; 
+	text-align: center;
+	margin-top: 10px;
+}
+/* navbar */
+.butn-group {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	/*background: rgb(0,150,0);*/
+}
+
+/*
+.butn-group button{
+	background-color: rgba(0,0,0,0);
+	border: 1px rgba(0,0,0,0);
+	padding: 5px 12px;
+	cursor: pointer;
+	width: 100%;
+	display: block;
+}
+*/
+.butn-group a{
+	background-color: rgba(0,0,0,0);
+	/*border: 1px rgba(0,0,0,0);*/
+	padding: 1px 12px;
+	cursor: pointer;
+	width: 100%;
+	display: block;
+}
+
+.butn-group a:not(:last-child){
+	border-bottom: none;
+}
+
+/* ---- CONTAINER ----*/
+
+.container {
+	padding: 32px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.projeto {
+	display: flex;
+}
+
+.titulo {
+	display: flex;
+}
+
+.meio {
+	display: flex;
+	flex-direction: column;
+}
+
+.meio p {
+	text-align: justify;
+}
+
+.texto {
+	width: 50%;
+}
+
+
+
+
+
