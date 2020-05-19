@@ -201,5 +201,30 @@ a:hover {
 }
 
 
+/* footer */
+
+.footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.fundo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 10px 20px 10px 20px;
+}
+
+.simbfooter {
+	display: flex;
+	justify-content: center;
+	padding: 50px 20px 50px 20px;
+}
+
+.simbfooter img {
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
 
 
