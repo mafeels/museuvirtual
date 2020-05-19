@@ -127,6 +127,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: blue;
+}
+
 .card {
 	width: 300px;
 	height: 400px;
@@ -148,6 +152,7 @@ a {
 }
 
 .card:hover {
+	color: black;
 	width: 325px;
 	height: 425px;
 }
@@ -156,6 +161,9 @@ a {
 	margin: 0 auto;
 }
 
+.parte {
+	margin: 0 auto;
+}
 
 /* projeto */
 
@@ -180,6 +188,17 @@ a {
 	width: 50%;
 }
 
+/*  equipe */
+
+.equipe {
+	display: flex;
+}
+
+.simbgrande {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
 
 
 
