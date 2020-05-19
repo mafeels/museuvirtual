@@ -20,7 +20,8 @@ body{
 .parent-1{
 	/*background: blue;*/
 	display: flex;
-	width: 100%;
+	width: 80%;
+	margin: 10px;
 	/*flex-direction: column-reverse;*/
 }
 
@@ -37,14 +38,6 @@ body{
 	display: flex;
 	flex-direction: column;
 	
-}
-
-/* card */
-
-.card {
-	/*background: rgb(255, 150, 0);*/
-	width: 80%;
-	margin: 10px;
 }
 
 
@@ -121,6 +114,57 @@ body{
 	display: table;
 	clear: both;
 }
+
+/* conteudo */
+
+.conteudo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.card {
+	width: 300px;
+	height: 400px;
+	margin: 40px;
+	background-color:#fdfdfd;
+	box-shadow: 1px 1px 9px #a0a0a0;
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	
+	text-decoration: none;
+	transition: width 0.5s ease;
+}
+
+.card a:link {
+	color: black;
+	text-decoration: none;
+}
+
+.card a:visited {
+ 	color: black;
+}
+
+.card:hover {
+	color: black;
+	width: 325px;
+	height: 425px;
+}
+
+.card a:active {
+	color: black;
+	text-decoration: underline;
+}
+
+.card img {
+	margin: 0 auto;
+}
+
+
+/* projeto */
 
 .projeto {
 	display: flex;
