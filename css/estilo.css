@@ -1,11 +1,13 @@
 /* Estilo do site Museu de Zoologia Virtual
 */
-* {
-	box-sizing: border-box;
-}
+
 
 body{
 	font-family: "Montserrat";
+}
+
+* {
+  box-sizing: inherit;
 }
 /*///////////// Cabeçalho */
 
@@ -18,13 +20,34 @@ body{
 }
 
 .parent-1{
-	/*background: blue;*/
+
 	display: flex;
 	width: 80%;
-	margin: 10px;
-	/*flex-direction: column-reverse;*/
+	margin-top: 30px;
 }
 
+.parent-2{
+	display: flex;
+	width: 80%;
+	margin-top: 30px;
+	margin-left: 2px;
+	background-color: #f4f4f4;
+	border: 2px solid #efefef;
+	border-radius: 5px;
+	transition: 1s ease;
+
+}
+
+.parent-2:hover{
+	transform: scale(1.1);
+}
+
+
+/*
+.parent-1 a:not(:last-child){
+	border-right: none;
+}
+*/
 .childparent{
 	/*background: green;*/
 	display: flex;
@@ -37,6 +60,7 @@ body{
 	/*background: green;*/
 	display: flex;
 	flex-direction: column;
+
 	
 }
 
@@ -49,6 +73,7 @@ body{
 	/*background: rgb(1,150,255);*/
 	width: 80%;
 	justify-content: center;
+	margin-top: 10px;
 }
 
 .child-img img{
@@ -80,19 +105,8 @@ body{
 	/*background: rgb(0,150,0);*/
 }
 
-/*
-.butn-group button{
-	background-color: rgba(0,0,0,0);
-	border: 1px rgba(0,0,0,0);
-	padding: 5px 12px;
-	cursor: pointer;
-	width: 100%;
-	display: block;
-}
-*/
 .butn-group a{
 	background-color: rgba(0,0,0,0);
-	/*border: 1px rgba(0,0,0,0);*/
 	padding: 1px 12px;
 	cursor: pointer;
 	width: 100%;
@@ -144,7 +158,7 @@ a:hover {
 	flex-direction: column;
 	text-align: center;
 	
-	transition: width 0.5s ease;
+	transition: 1s ease;
 }
 
 .card a:visited {
@@ -153,8 +167,9 @@ a:hover {
 
 .card:hover {
 	color: black;
-	width: 325px;
-	height: 425px;
+	/*width: 325px;
+	height: 425px;*/
+	transform: scale(1.1);
 }
 
 .card img {
@@ -209,7 +224,7 @@ a:hover {
 }
 
 .fundo {
-	width: 100%;
+	width: 97%;
 	display: flex;
 	justify-content: center;
 	padding: 10px 20px 10px 20px;
@@ -218,6 +233,7 @@ a:hover {
 .simbfooter {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	padding: 50px 20px 50px 20px;
 }
 
@@ -226,5 +242,193 @@ a:hover {
 	margin-left: 40px;
 }
 
+
+/* partes q desaparecem e reaparecem dependendo do tamanho da tela*/
+
+.hid {
+	display: none;
+}
+
+#simbib {
+	width:216px;
+	height:137px;
+}
+
+#simbmuseu {
+	width:430px; 
+	height:200px; 
+}
+
+#simbunicamp {
+	width:159px;
+	height:162px; 
+}
+
+#like{
+	width:100px;
+	height:100px;
+}
+
+#navbar{
+	width:100px;
+	height:130px;
+}
+
+/* cards */
+
+#sauvas {
+	width:244px;
+	height:272px;
+}
+
+#sons {
+	width:260px; 
+	height:302px;
+}
+
+#borboleta {
+	width:269px;
+	height:294px;
+}
+
+#nemo {
+	width:285px; 
+	height:265px;
+}
+
+#animais {
+	width:264px; 
+	height:267px;
+}
+
+#mamiferos {
+	width:264px;
+	height:267px;
+}
+
+@media only screen and (max-width: 800px){
+	.hidmobile {
+		display: none !important;
+	}
+
+	.hid{
+		display: block;
+	}
+
+	.butn-group {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 5px;
+		padding-bottom: 30px;
+	}
+
+	.butn-group a{
+		width: 25%;
+		margin: 0 auto;
+	}
+
+	.container {
+		padding: 20px;
+		margin: 0 auto;
+	}
+
+	.conteudo{
+		display: flex;
+	}
+	
+	.card {
+		width: 100%;/*300/3 = 100*/
+		height: 10%;/*400/3 = 133*/
+		margin-bottom: 0;
+		margin-top: 5px;
+		flex-direction: row;
+	}
+	
+	.content-img {
+		display: flex;
+		justify-content: center;
+		margin: 1px;
+		height: 20px;
+	}
+
+	.container-img img{
+		margin: 1px;
+	}
+
+	.child-img{
+		width: 100%;
+	}
+
+	.fundo{
+		width: 89%;
+	}
+
+	#fonteheader{
+		font-size: 10px !important;
+	}
+
+	#navbar{
+		width:70px;
+		height:95px;
+	}
+
+	#like{
+		width:50px;
+		height:50px;
+	}
+
+	#simbib {
+		margin-top: 10px;
+		width:108px;
+		height:67px;
+	}
+
+	#simbmuseu {
+		margin-top: 10px;
+		width:215px; 
+		height:100px; 
+	}
+
+	#simbunicamp {
+		margin-top: 10px;
+		width:80px;
+		height:81px; 
+	}
+
+	/* cards */
+
+	#sauvas {
+		width:61px;/*244/4 = 61*/
+		height:68px;/*272/4 = 68*/
+	}
+
+	#sons {
+		width:65px;/*260/4=65*/ 
+		height:75px;/*302/4=75*/
+	}
+
+	#borboleta {
+		width:134px;/*269/2=134*/
+		height:147px;/*294/2=147*/
+	}
+
+	#nemo {
+		width:142px; /*285/2=142*/
+		height:132px;/*265/2=132*/
+	}
+
+	#animais {
+		width:132px; /*264/2=132*/
+		height:133px;/*267/2=133*/
+	}
+
+	#mamiferos {
+		width:132px;/*264*/
+		height:133px;
+	}
+}
+
+/**teste*/
 
 

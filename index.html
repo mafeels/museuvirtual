@@ -1,47 +1,103 @@
 <!DOCTYPE html>
 <html>
-<header>
+<head>
 	<title>Museu de Zoologia Virtual</title>
+
+	<meta charset="UTF-8">
+
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 
 	<!--- estilo --->
 	<link type="text/css" rel="stylesheet" href="css/estilo.css"/>
 	
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167358140-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-</header>
+	  gtag('config', 'UA-167358140-1');
+	</script>
+
+</head>
 <body>
-		<!---
-		<div class="bg-img" style="background-image: url(img/museuvirtual1.png);">
-		</div>
-
-		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-
-		--->
-
 	<!--- header --->
 	<div class="container" style="background-color:#fcfcfc">
+
+
+
+		<!---- navbar horizontal mobile de botões ---->
+			<div class="butn-group hid">
+				<a href="#projeto">
+					<div class="container-img">
+						<img src="img/simbprojeto.png" alt="projeto" id="navbar"/>
+
+						<div class="content-img">
+							<h4>projeto</h4>
+						</div>	
+					</div>
+				</a>
+
+				<a href="#equipe">
+					<div class="container-img">
+						<img src="img/simbequipe.png" alt="projeto" id="navbar"/>
+
+						<div class="content-img">
+							<h4>equipe</h4>
+						</div>	
+					</div>
+				</a>
+
+				<a href="#contato">
+						<div class="container-img">
+							<img src="img/simbcontato.png" alt="projeto" id="navbar" />
+
+							<div class="content-img">
+								<h4>contato</h4>
+							</div>	
+						</div>
+				</a>
+
+			</div>
 		<div class="parent">
 
 			<div class="childparent">
 				<div class="child-img">
 					<img src="img/museuvirtual1.png"/>
 				</div>
+			<div class="parent-1">
 
-				<a href="#conteudo" class="parent-1">
-					<img src="img/like.png" width="100px" height="100px" />
+				<a href="#conteudo" class="parent-2">
+					<img id="like" src="img/like.png" />
 
 					<div class="childparent-1">
-						<h1 style="margin: 5px">Conhecendo os animais <i>on-line</i></h1>
-						<h3 style="margin: 5px">(Para todas as idades)</h3>
+						<h2 class="hidmobile" style="margin: 5px">Conhecendo os animais <i>on-line</i></h2>
+						<h3 class="hid" style="margin: 5px">Conhecendo os animais <i>on-line</i></h3>
 					</div>
-					
-				
 				</a>
+				<a href="#pordentro" class="parent-2">
+					<div class="childparent-1">
+						<h2 class="hidmobile" style="margin: 5px">O Museu por dentro</h2>
+						<h3 class="hid" style="margin: 5px">O Museu por dentro</h3>
+					</div>
+				</a>
+				<a href="#recomenda" class="parent-2">
+					
+					<div class="childparent-1">
+						<h2 class="hidmobile" style="margin: 5px">O Museu recomenda</h2>
+						<h3 class="hid" style="margin: 5px">O Museu recomenda</h3>
+					</div>
+				</a>
+			</div>
+				
+				
 
 			</div>
 			<!---- navbar vertical de botões ---->
-			<div class="butn-group">
+			<div class="butn-group hidmobile">
 				<a href="#projeto">
 					<div class="container-img">
 						<img src="img/simbprojeto.png" alt="projeto" width="100px" height="130px" />
@@ -77,61 +133,71 @@
 	<!--- conteudo --->
 	<div class="container" style="background-color:#efefef" id="conteudo">
 		<div class="conteudo parte">
-			<a class="card" href="https://www.youtube.com/watch?v=nJtaDe6bGkU&feature=youtu.be">
-				<img src="img/c1.png" width="244px" height="272px" />
+			<a class="card" href="https://www.youtube.com/watch?v=nJtaDe6bGkU" target="_blank">
+				<img src="img/c1.png" id="sauvas" />
 				<h2>Por trilhas e túneis: seguindo as saúvas</h2>
 			</a>
 
 
-			<a class="card" href="#conteudo" style="display: none">
-				<img src="img/c2.png" width="260px" height="302px" />
+			<a class="card" href="https://www.youtube.com/watch?v=ryqgpA3wVMc" target="_blank">
+				<img src="img/c2.png" id="sons" />
 				<h2>Sons da natureza</h2>
 			</a>
 
 			<a class="card" href="https://spark.adobe.com/page/140H7Hsorkm8z/" target="_blank">
-				<img src="img/c3.png" width="269px" height="294px" />
+				<img src="img/c3.png" id="borboleta" />
 				<h2>Borboleta ou Mariposa?</h2>
 			</a>
 		<!--- linha --->
-			<a class="card" href="https://www.youtube.com/watch?v=SF9uHErWCmo">
-				<img src="img/c4.png" width="285px" height="265px" />
+			<a class="card" href="https://www.youtube.com/watch?v=ZYEAgiWhx24" target="_blank">
+				<img src="img/c4.png" id="nemo" />
 				<h2>Procurando Nemo: Que história é essa?</h2>
 			</a>
 
-			<a class="card" href="#conteudo" style="display: none">
-				<img src="img/c5.png" width="264px" height="267px" />
-				<h2>Animais ao nosso redor</h2>
+			<a class="card" href="#conteudo">
+				<img src="img/c5.png" id="animais" />
+				<h2>Animais que polinizam</h2>
+				<!---<p>Lançamento em breve</p>---->
 			</a>
 
-			<a class="card" href="#conteudo" style="display: none">
-				<img src="img/c6.png" width="264px" height="267px" />
-				<h2>Mamíferos misteriosos</h2>
+			<a class="card" href="#conteudo">
+				<img src="img/c7.png" id="mamiferos" />
+				<h2>Animais na Arte</h2>
 			</a>
 		</div>
 		<div class="parte">
 			<p>crédito das imagens: <a href="http://emojipedia.org">emojipedia.org</a></p>
 		</div>
 	</div>
+	<!--- pordentro --->
+	<div class="container" style="background-color:#fcfcfc" id="pordentro">
+			<p>Conteudo da parte o museu por dentro</p>
+	</div>
+	<!--- recomenda --->
+	<div class="container" style="background-color:#efefef" id="recomenda">
+			<p>Conteudo da parte o museu recomenda</p>
+	</div>
 	<!--- o projeto --->
 	<div class="container projeto" style="background-color:#fcfcfc" id="projeto">
 
 		<div class="meio ">
 			<div class="titulo">
-			    <img src="img/simbprojeto.png" alt="projeto" width="75px" height="94px" />
+			    <img src="img/simbprojeto.png" alt="projeto" width="75px" height="94px"/>
 			    <h2 style="font-size: 30px"> O Projeto</h2>
 		    </div>
 
 			<p style="font-size: 22px">
-				O <strong>Museu de Zoologia Virtual</strong> é um espaço <em>on-line</em>, localizado no site do Museu de Zoologia do Instituto de Biologia da Unicamp, que oferece conteúdo educativo aberto sobre a biodiversidade animal na forma de vídeos, fotos, e textos.
+				O <strong>Museu de Zoologia Virtual</strong> é um projeto desenvolvido pela equipe do Museu de Zoologia do Instituto de Biologia da Unicamp que oferece conteúdo educativo aberto, <em>on-line</em>, sobre a biodiversidade animal na forma de vídeos, fotos e textos.
 				<br/><br/>
-				<strong>Continue aprendendo em casa pelo computador ou celular.</strong><br/>
-				Em tempos de distanciamento social, esperamos aguçar sua curiosidade a atrair estudantes, professores, educadores e pais que buscam na internet recursos educativos sobre animais e a ciência por trás deles, conscientizando a todos sobre a conservação do meio ambiente. Esperamos também contribuir de forma positiva para o aprendizado de toda família!
+				<strong>Continue aprendendo em casa pelo computador ou celular</strong><br/>
+				Em tempos de distanciamento social, esperamos aguçar sua curiosidade e atrair estudantes, professores, educadores e pais que buscam na internet recursos educativos sobre os animais e a ciência por trás deles, conscientizando a todos sobre a conservação do meio ambiente. Esperamos também contribuir de forma positiva para o aprendizado de toda a família!
+
 			</p>
 
 		</div>
 
-		<div class="parte">
-			<img src="img/notebookcelular.png" alt="projeto" />
+		<div class="hidmobile">
+			<img src="img/notebookcelular.png" alt="notebookcelular" />
 		</div>
 
 	</div>
@@ -140,11 +206,14 @@
 	<div class="container equipe" style="background-color:#efefef" id="equipe">
 
 		<div class="simbgrande parte">
-			<img src="img/simbequipeGrande.png" alt="projeto" />
+			<img class="hidmobile" src="img/simbequipeGrande.png" alt="projeto" />
 		</div>
 
 		<div class="parte">
-			<h2 style="font-size: 30px">A equipe</h2>
+			<div class="titulo">
+			    <img class="hid" src="img/simbequipe.png" alt="projeto" width="75px" height="94px"/>
+			    <h2 style="font-size: 30px"> A equipe</h2>
+		    </div>
 
 			<h3 style="font-size: 25px">Pesquisa, Produção e Revisão</h3>
 
@@ -163,7 +232,7 @@
 			<ul style="font-size: 22px">
 				<li>Adriana Dias da Silva (Secretária)</li>
 				<li>Matheus Alves (Graduando Midialogia, bolsista SAE
-mídias socias)</li>
+mídias socias, Web Design)</li>
 			</ul>
 
 		</div>
@@ -188,8 +257,8 @@ mídias socias)</li>
 
 		</div>
 
-		<div class="simbgrande parte">
-			<img src="img/contatoaviao.png" alt="projeto" />
+		<div class="simbgrande parte hidmobile">
+			<img src="img/contatoaviao.png" alt="contato" />
 		</div>
 
 	</div>
@@ -198,17 +267,18 @@ mídias socias)</li>
 	<!--- footer --->
 
 		<div class="parte simbfooter" style="background-color:#f2f2f2">
-			<img src="img/simbib.png" alt="projeto" width="216px" height="137px" />
+			<img id="simbib" src="img/simbib.png" alt="projeto" />
 
-			<img src="img/simbmuseu.png" alt="projeto" width="30%" height="15%" />
+			<img id="simbmuseu" src="img/simbmuseu.png" alt="projeto"/>
 
-			<img src="img/simbunicamp.png" alt="projeto" width="159px" height="162px" />
+			<img id="simbunicamp" src="img/simbunicamp.png" alt="projeto" />
 
 		</div>
 
 		<div class="parte fundo" style="background-color:#5dbc6a">
 			<h2>Maio de 2020</h2>
 		</div>
+
 
 </body>
 </html>
