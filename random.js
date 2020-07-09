@@ -8,12 +8,6 @@ var elementos = document.getElementById("lista").children;
 var i=0;
 var ordem = [6,2,3,4,5,1];
 
-console.log(ordem[0]);
-
-if(i<ordem.length){
-	console.log("funcionando antes for loop");
-}
-
 
 for(i=0;i < ordem.length;i++){
 	je = Math.floor(Math.random()*6);

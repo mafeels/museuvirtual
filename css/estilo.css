@@ -188,6 +188,54 @@ a:hover {
 	margin: 0 auto;
 }
 
+/* por dentro/recomenda */
+
+
+.canal{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 10px 10px 10px;
+}
+
+.canal h3{
+	padding: 10px 10px 10px 10px;
+}
+
+.p-recomenda{
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* horizontal center */
+	align-items: center; /* vertical center  */
+}
+
+.p-recomenda iframe{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.card-1 {
+	padding: 10px 10px 10px 10px;
+	background-color:#fdfdfd;
+	color: black;
+	box-shadow: 1px 1px 9px #a0a0a0;
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	
+	transition: 1s ease;
+}
+
+.card-1:hover {
+	color: black;
+	transform: scale(1.1);
+}
+
+
+
 /* projeto */
 
 .projeto {
