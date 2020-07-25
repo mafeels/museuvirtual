@@ -348,6 +348,11 @@ a:hover {
 
 /* cards */
 
+#cardsvg{
+	width: 250px;
+	height: 250px;
+}
+
 #sauvas {
 	width:244px;
 	height:272px;
@@ -376,6 +381,11 @@ a:hover {
 #mamiferos {
 	width:264px;
 	height:267px;
+}
+
+.video{
+		width:560px; 
+		height:315px;
 }
 
 @media only screen and (max-width: 800px){
@@ -411,7 +421,7 @@ a:hover {
 	
 	.card {
 		width: 100%;/*300/3 = 100*/
-		height: 10%;/*400/3 = 133*/
+		height: 25%;/*400/3 = 133*/
 		margin-bottom: 0;
 		margin-top: 5px;
 		flex-direction: row;
@@ -499,8 +509,17 @@ a:hover {
 		width:132px;/*264*/
 		height:133px;
 	}
+
+
+	/*video*/
+
+	.video{
+		width:280px; 
+		height:157px;
+	}
 }
 
 /**teste*/
+
 
 
