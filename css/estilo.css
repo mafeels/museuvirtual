@@ -523,6 +523,14 @@ a:hover {
 		width:280px; 
 		height:157px;
 	}
+
+
+	.canaisyt { /*yt = youtube*/
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
 }
 
 /**teste*/
