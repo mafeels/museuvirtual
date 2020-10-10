@@ -40,7 +40,7 @@ elementos[1].style.order = ordem[1];
 elementos[2].style.order = ordem[2];
 elementos[3].style.order = ordem[3];
 elementos[4].style.order = ordem[4];
-elementos[5].style.order = ordem[5];
+elementos[5].style.order = 0;
 
 /*
 for(i=0; i< elementos.length;i++){

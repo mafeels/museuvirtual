@@ -144,6 +144,12 @@ body{
 	clear: both;
 }
 
+.canaisyt { /*yt = youtube*/
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
 /* conteudo */
 
 .conteudo {
@@ -342,8 +348,8 @@ a:hover {
 }
 
 #navbar{
-	width:100px;
-	height:130px;
+	width:218px;
+	height:190px;
 }
 
 /* cards */
